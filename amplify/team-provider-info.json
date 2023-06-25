@@ -1,0 +1,23 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-donutsinbellycom-dev-190940-authRole",
+      "UnauthRoleArn": "arn:aws:iam::301464436555:role/amplify-donutsinbellycom-dev-190940-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::301464436555:role/amplify-donutsinbellycom-dev-190940-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-donutsinbellycom-dev-190940-deployment",
+      "UnauthRoleName": "amplify-donutsinbellycom-dev-190940-unauthRole",
+      "StackName": "amplify-donutsinbellycom-dev-190940",
+      "StackId": "arn:aws:cloudformation:us-east-2:301464436555:stack/amplify-donutsinbellycom-dev-190940/58c119e0-12fd-11ee-b3af-0a3b5bfa2093",
+      "AmplifyAppId": "d1h5zealfg8gsc"
+    },
+    "categories": {
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d1h5zealfg8gsc",
+          "type": "cicd"
+        }
+      }
+    }
+  }
+}
