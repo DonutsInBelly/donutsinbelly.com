@@ -1,23 +1,22 @@
 {
-  "name": "",
-  "type": "module",
-  "version": "0.0.1",
+  "name": "donutsinbelly.com",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "@astrojs/mdx": "^0.19.0",
-    "@astrojs/react": "^2.1.1",
-    "@astrojs/rss": "^2.3.2",
-    "@astrojs/sitemap": "^1.2.2",
-    "@types/react": "^18.0.38",
-    "@types/react-dom": "^18.0.11",
-    "astro": "^2.3.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "@types/node": "20.2.5",
+    "@types/react": "18.2.8",
+    "@types/react-dom": "18.2.4",
+    "eslint": "8.42.0",
+    "eslint-config-next": "13.4.4",
+    "next": "13.4.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "typescript": "5.1.3"
   }
 }
