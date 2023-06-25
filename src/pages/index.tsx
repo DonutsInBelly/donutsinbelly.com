@@ -33,7 +33,7 @@ export default function App() {
               margin={{ horizontal: 'l', top: 'xxxl', bottom: 'm' }}
             >
               <SpaceBetween direction="vertical" size="l" alignItems="center">
-                <h1>Hey! 👋 I'm Carlin</h1>
+                <h1>{"Hey! 👋 I'm Carlin"}</h1>
                 <h2>I write about software, gaming, and food here.</h2>
                 <Link href={'/blog'}>
                   <Button variant="primary">Take me to the blog</Button>
