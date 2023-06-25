@@ -5,6 +5,10 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  transpilePackages: [
+    '@cloudscape-design/components',
+    '@cloudscape-design/component-toolkit',
+  ],
 };
 
 module.exports = nextConfig;
