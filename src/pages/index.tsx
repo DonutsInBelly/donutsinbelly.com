@@ -1,18 +1,7 @@
-import { useState } from 'react';
-import Header from '@cloudscape-design/components/header';
-import Container from '@cloudscape-design/components/container';
 import SpaceBetween from '@cloudscape-design/components/space-between';
-import Input from '@cloudscape-design/components/input';
 import Button from '@cloudscape-design/components/button';
-import TopNavigation from '@cloudscape-design/components/top-navigation';
-import { NavBar } from '@/components/layout/navbar';
 import Image from 'next/image';
-import {
-  Box,
-  ColumnLayout,
-  Grid,
-  TextContent,
-} from '@cloudscape-design/components';
+import { Box, Grid, TextContent } from '@cloudscape-design/components';
 import Link from 'next/link';
 
 export default function App() {
