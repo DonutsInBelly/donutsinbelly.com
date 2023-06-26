@@ -24,41 +24,45 @@ type BlogPost = {
 };
 
 export default function BlogPost({ post }: { post: BlogPost }) {
-  return (
-    <Box margin={{ horizontal: 'xl' }}>
-      <Link href="/blog">
-        <Button>
-          <Icon name="arrow-left" />
-          Back
-        </Button>
-      </Link>
-      <TextContent>
-        <ColumnLayout columns={2}>
-          <Box margin="xl">
-            <Header>{post.title}</Header>
-            <p>
-              <i>{post.shortDescription}</i>
-            </p>
-            <p>
-              <i>Posted on: {formatDate(new Date(post._createdAt))}</i>
-            </p>
-            <p>
-              <i>Last updated on: {formatDate(new Date(post._updatedAt))}</i>
-            </p>
+  if (!post) {
+    return <div></div>;
+  } else {
+    return (
+      <Box margin={{ horizontal: 'xl' }}>
+        <Link href="/blog">
+          <Button>
+            <Icon name="arrow-left" />
+            Back
+          </Button>
+        </Link>
+        <TextContent>
+          <ColumnLayout columns={2}>
+            <Box margin="xl">
+              <Header>{post.title}</Header>
+              <p>
+                <i>{post.shortDescription}</i>
+              </p>
+              <p>
+                <i>Posted on: {formatDate(new Date(post._createdAt))}</i>
+              </p>
+              <p>
+                <i>Last updated on: {formatDate(new Date(post._updatedAt))}</i>
+              </p>
+            </Box>
+            <Box>
+              <Image src={post.heroImage} alt={''} width="300" height="200" />
+            </Box>
+          </ColumnLayout>
+          <Box margin="xxxl">
+            <PortableText
+              value={post.content}
+              components={portableTextComponents}
+            />
           </Box>
-          <Box>
-            <Image src={post.heroImage} alt={''} width="300" height="200" />
-          </Box>
-        </ColumnLayout>
-        <Box margin="xxxl">
-          <PortableText
-            value={post.content}
-            components={portableTextComponents}
-          />
-        </Box>
-      </TextContent>
-    </Box>
-  );
+        </TextContent>
+      </Box>
+    );
+  }
 }
 
 export async function getStaticProps({ params }: { params: ParsedUrlQuery }) {
